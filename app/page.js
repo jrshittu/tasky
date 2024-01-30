@@ -1,14 +1,13 @@
 import React from 'react'
+import Contents from '@/components/Contents'
 
 const Home = () => {
 
   return (
     <>
-      <section className='px-6 md:px-20 py-24'>
-        <div className='flex max-xl:flex-col gap-16 '>
-          <p className='text-red-500'>Hello</p>
-        </div>
-      </section>
+      <div className='md:w-4/5 w-full h-screen bg-[#fff] rounded border-gray-400 border-2'>
+        <Contents />
+      </div>
     </>
   )
 }
