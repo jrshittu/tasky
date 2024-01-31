@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tasky - Task Management Dashboard for TeachMateAI
 
-## Getting Started
+## Overview
 
-First, run the development server:
+Tasky is a task management dashboard designed for TeachMateAI. It provides a user-friendly interface for managing tasks, allowing users to create, view, edit, and delete tasks seamlessly. The application is built using Next.js, React, and incorporates various components for a modular and organized structure.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Components](#components)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+
+To install and run Tasky locally, follow these steps:
 
 ```bash
+git clone https://github.com/yourusername/tasky.git
+cd tasky
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Make sure you have Node.js and npm installed on your machine.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Tasky simplifies task management with an intuitive dashboard. Users can create new tasks, provide details such as title, description, date, completion status, and importance. The application offers a responsive and visually appealing design to enhance the user experience.
 
-## Learn More
+```bash
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Components
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Tasky is composed of several React components, each serving a specific purpose:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- `RootLayout`: Layout structure for the entire application.
+- `Home`: Home page component integrating with Sidebar, Contents, and other elements.
+- `AddTask`: Form component for creating new tasks.
+- `TaskList`: Component for displaying a list of tasks.
+- `TaskCard`: Component representing an individual task with delete and edit functionalities.
+- `Contents`: Container for managing task-related components and state.
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions to Tasky are welcome! To contribute:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature-name`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature/your-feature-name`).
+5. Open a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
