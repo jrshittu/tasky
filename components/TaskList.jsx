@@ -12,6 +12,7 @@ const TaskList = ({tasks}) => {
             <p>{item.completed}</p>
             <p>{item.important}</p>
             <button className='bg-red-400 text-white sm:block p-2 mt-8 rounded border-[#f7cef8] border-2'>Delete</button>
+            <button className='bg-green-400 text-white sm:block p-2 mt-8 rounded border-[#f7cef8] border-2'>Edit</button>
           </div>
         ))
       }
