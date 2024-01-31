@@ -4,6 +4,8 @@
 
 Tasky is a task management dashboard designed for TeachMateAI. It provides a user-friendly interface for managing tasks, allowing users to create, view, edit, and delete tasks seamlessly. The application is built using Next.js, React, and incorporates various components for a modular and organized structure.
 
+![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/86xma1zbu65z0azfsxzb.PNG)
+
 ## Table of Contents
 
 - [Installation](#installation)
