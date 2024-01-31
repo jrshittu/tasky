@@ -7,9 +7,14 @@ import TaskCard from "./TaskCard"
 const Contents = () => {
   
   const [tasks, setTasks] = useState([])
+  const [addTask, setAddTask] = useState(false)
 
   const handleAddTask = (task) => {
     setTasks([...tasks, task]);
+  }
+
+  const handleSetAddTask = () => {
+    setAddTask(true);
   }
 
   return (
@@ -18,8 +23,16 @@ const Contents = () => {
         {}
       </p>
       <div className="flex flex-col justify-center items-center">
-        <AddTask tasks={tasks} onAdd={handleAddTask} />
         <TaskList tasks={tasks} />
+
+          {
+            addTask &&
+            <AddTask tasks={tasks} onAdd={handleAddTask} />
+          }
+
+        <div>
+          <button onClick={handleSetAddTask}>Add Task</button>
+        </div>
       </div>
     </div>
   )
