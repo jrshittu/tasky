@@ -4,6 +4,7 @@ import SideBar from '@/components/SideBar';
 import { useState, useEffect } from'react'
 import Image from 'next/image'
 
+
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false); 
 
