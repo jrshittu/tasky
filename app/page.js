@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 
 const Home = () => {
-    const [isOpen, setIsOpen] = useState(false); 
+    const [isOpen, setIsOpen] = useState(true); 
 
     const handleToggle = () => setIsOpen((prevOpen) => !prevOpen);
 
