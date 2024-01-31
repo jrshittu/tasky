@@ -5,21 +5,11 @@ import { useEffect, useState } from'react'
 const NavBar = ["All Tasks", "Pending", "Completed", "Settings"]
 
 const SideBar = () => {
-    const [isOpen, setIsOpen] = useState(false); 
-
-    const handleToggle = () => setIsOpen((prevOpen) => !prevOpen);
-  
-    useEffect(() => {
-         
-      }, [isOpen]);
+    
 
   return (
     <>
-        {
-            isOpen ? (
-                <div className="hidden md:flex w-1/5 h-screen bg-[#fff] rounded border-gray-400 border-2">
-            <div>
-                        <div>
+                    <div>
                         <div className="mt-6 mb-10 mx-2 flex flex-row items-center h-10 gap-5">
                             <div className='flex items-center'>
                                 <Image src="/assets/icons/logo.svg" width={40} height={30} alt="logo" />
@@ -50,25 +40,6 @@ const SideBar = () => {
                         </div>
         
                     </div>
-            </div>
-            <div>
-                <button
-                    className='p-2'
-                    onClick={handleToggle}
-                >
-                    <Image src="/assets/icons/menu.png" width={30} height={30} alt="logo" />
-                </button>
-            </div>
-        </div>
-            ) : (
-                <button
-                    className='p-2'
-                    onClick={handleToggle}
-                >
-                    <Image src="/assets/icons/menu.png" width={30} height={30} alt="logo" />
-                </button>
-            )
-        }
     </>
   )
 }
